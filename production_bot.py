@@ -5,6 +5,11 @@ import hmac
 import json
 import logging
 import os
+# 🔴 STOP CONTROL
+if os.getenv("STOP_BOT") == "1":
+    print("Bot is stopped via env")
+    exit()
+    
 import ssl
 import threading
 import urllib.error
