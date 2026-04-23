@@ -76,17 +76,17 @@ VIEW_ADMINS = [791363068]
 ALL_ADMINS = list(dict.fromkeys(MAIN_ADMINS + APPROVE_ADMINS + VIEW_ADMINS))
 
 DEFAULT_PRODUCTS = {
-     "p1": {"name": "Myntra 100 Off on 199", "price": 30, "file": str(DATA_DIR / "myntra100on199.txt"), "reserve": 2},
-    "p2": {"name": "Myntra 100 Off on 499", "price": 20, "file": str(DATA_DIR / "myntra100on499.txt"), "reserve": 2},
+     "p1": {"name": "Myntra 100 Off on 199", "price": 35, "file": str(DATA_DIR / "myntra100on199.txt"), "reserve": 2},
+    "p2": {"name": "Myntra 100 Off on 649", "price": 20, "file": str(DATA_DIR / "myntra100on649.txt"), "reserve": 2},
     "p3": {
         "name": "Myntra Combo(100+100)",
         "price": 50,
-        "combo_files": [str(DATA_DIR / "myntra100on199.txt"), str(DATA_DIR / "myntra100on499.txt")],
+        "combo_files": [str(DATA_DIR / "myntra100on199.txt"), str(DATA_DIR / "myntra100on649.txt")],
         "reserve": 2,
     },
       "p4": {"name": "Myntra FWD 100 off on 399", "price": 25, "file": str(DATA_DIR / "myntra100on399.txt"), "reserve": 2},
     
-   
+   "p5": {"name": "Myntra 50% OFF code", "price": 80, "file": str(DATA_DIR / "myntra50.txt"), "reserve": 2},
 }
 
 # =========================
