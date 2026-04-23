@@ -1561,7 +1561,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         await update.message.reply_text(f"⚠️ {maintenance_reason()}")
         return
     await update.message.reply_text(
-        "❓ Need Help?\n\n📩 Contact: @myntracodes\n\nPlz contact for any support or help or feedback\n\n Thank you.",
+        "❓ Need Help?\n\n📩 Contact: @shop_support_id\n\nPlz contact for any support or help or feedback\n\n Thank you.",
         reply_markup=ReplyKeyboardRemove(),
     )
 
