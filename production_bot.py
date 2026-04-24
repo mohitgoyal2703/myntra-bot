@@ -66,7 +66,7 @@ APPROVED_UTRS_FILE = DATA_DIR / "approved_utrs.json"
 MAINTENANCE_FILE = DATA_DIR / "maintenance.json"
 
 LOW_UPI = os.getenv("LOW_UPI", "Q703671699@ybl")
-HIGH_UPI = os.getenv("HIGH_UPI", "mohitgoy1al21-1@okhdfcbank")
+HIGH_UPI = os.getenv("HIGH_UPI", "mohitgoy0@okaxis")
 LOW_QR = os.getenv("LOW_QR", "qr.png")
 HIGH_QR = os.getenv("HIGH_QR", "qr2.png")
 
@@ -2408,7 +2408,7 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         update_order(awaiting_order_id, admin_messages=admin_messages)
         context.user_data.pop("awaiting_payment_reference_order_id", None)
         await update.message.reply_text(
-            f"⏳ Payment under review\n\nOrder ID: {awaiting_order_id}\nWaiting for admin approval"
+            f"⏳ Waiting for admin approval\n\nOrder ID: {awaiting_order_id}\nApproval may take upto 1-2hr sometimes"
         )
         return
 
