@@ -1185,8 +1185,8 @@ async def process_order(chat_id: int, context: ContextTypes.DEFAULT_TYPE, qty: i
             )
 
     # manual backup
-    upi = HIGH_UPI if total >= 400 else LOW_UPI
-    qr = HIGH_QR if total >= 400 else LOW_QR
+    upi = HIGH_UPI if total >= 1000 else LOW_UPI
+    qr = HIGH_QR if total >= 1000 else LOW_QR
     update_order(order_id, status="manual_payment_pending", upi=upi, payment_mode="manual_upi")
 
     caption = (
